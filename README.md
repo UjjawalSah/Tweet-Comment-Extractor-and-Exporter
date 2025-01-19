@@ -51,5 +51,6 @@ This Python script allows users to extract comments from a tweet by providing it
 
 ## License:
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+No license specified.
+
 
