@@ -1,21 +1,55 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tweet Comment Extractor and Exporter</title>
-</head>
-<body>
-    <h1>Tweet Comment Extractor and Exporter</h1>
-    <p>This Python script allows users to extract comments from a tweet by providing its URL and export the data into an Excel file for easy analysis.</p>
+# Tweet Comment Extractor and Exporter
 
-    <h2>Requirements:</h2>
-    <ul>
-        <li><strong>Python 3.x</strong></li>
-        <li><strong>Tweepy</strong>: <code>pip install tweepy</code></li>
-        <li><strong>Pandas</strong>: <code>pip install pandas</code></li>
-        <li><strong>Google Colab</strong> (for downloading the Excel file)</li>
-        <li><strong>Twitter API Bearer Token</strong> (required for authentication)</li>
-    </ul>
-</body>
-</html>
+This Python script allows users to extract comments from a tweet by providing its URL and export the data into an Excel file for easy analysis.
+
+---
+
+## Requirements:
+
+- **Python 3.x**
+- **Tweepy**: Install via `pip install tweepy`
+- **Pandas**: Install via `pip install pandas`
+- **Google Colab** (for downloading the Excel file)
+- **Twitter API Bearer Token** (required for authentication)
+
+---
+
+## Features:
+
+- Extract comments from a tweet using its URL.
+- Export extracted comments into an Excel file for easy access and analysis.
+- Handles rate limits imposed by Twitter API automatically with retry functionality.
+
+---
+
+## Installation:
+
+1. Clone the repository or download the script files.
+2. Install the required Python libraries:
+    ```bash
+    pip install tweepy pandas
+    ```
+3. Replace `YOUR_BEARER_TOKEN` with your Twitter API bearer token in the script.
+
+---
+
+## Usage:
+
+1. Input the URL of the tweet for which you want to extract comments.
+2. The script will fetch the comments and save them into an Excel file.
+3. Download the Excel file directly from Google Colab.
+
+---
+
+## Note:
+
+- If the rate limit is exceeded, the script will wait for 15 minutes before retrying.
+- Be mindful of Twitter's API rate limits when using this script.
+- The Excel file will be downloaded with the name `tweet_comments.xlsx`.
+
+---
+
+## License:
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
